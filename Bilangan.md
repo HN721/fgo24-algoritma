@@ -16,10 +16,10 @@ DECLARE Genap : REAL
 INPUT Bilangan
 IF  Bilangan % 2 == 0 THEN
     Genap <- Bilangan
-    OUTPUT "BILANGAN  GENAP :",Genap
+    OUTPUT "BILANGAN  GENAP "
 ELSE
     Ganjil <- Bilangan
-    OUTPUT "BILANGAN  GANJIL :",Ganjil
+    OUTPUT "BILANGAN  GANJIL "
 ENDIF
 ```
 
