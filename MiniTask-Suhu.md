@@ -11,7 +11,7 @@
    → R = C × 4/5
 
 5. Hitung Kelvin (K) dengan rumus:
-   → K = C + 273.15
+   → K = C + 273
 
 6. Tampilkan hasil suhu dalam satuan Fahrenheit, Reamur, dan Kelvin
 
@@ -25,7 +25,7 @@ flowchart TD
   B@{shape: lean-r, label: "C?"}
   C@{shape , label: "F = (C × 9/5) + 32"}
   D@{shape , label: "R = C × 4/5"}
-  E@{shape , label: "K = C + 273.15"}
+  E@{shape , label: "K = C + 273"}
   F@{shape: lean-r, label: "F,R,K"}
   H@{shape: dbl-circ, label: "End"}
 A --> B
