@@ -7,6 +7,22 @@
 5. Jika tidak, maka tampilkan: "Bilangan Ganjil"
 6. Selesai
 
+## Pseudocode
+
+```
+DECLARE Bilangan : REAL
+DECLARE GANJIL : REAL
+DECLARE GENAP : REAL
+INPUT BILANGAN
+IF BILANGAN BILANGAN % 2 === 0 THEN
+    GENAP <- BILANGAN
+    OUTPUT "BILANGAN ANDA GENAP :",GENAP
+ELSE
+    GANJIL <- BILANGAN
+    OUTPUT "BILANGAN ANDA GANJIL :",GANJIL
+ENDIF
+```
+
 ## Flowchart
 
 ```mermaid
