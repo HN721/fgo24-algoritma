@@ -11,15 +11,15 @@
 
 ```
 DECLARE Bilangan : REAL
-DECLARE GANJIL : REAL
-DECLARE GENAP : REAL
-INPUT BILANGAN
-IF BILANGAN BILANGAN % 2 === 0 THEN
-    GENAP <- BILANGAN
-    OUTPUT "BILANGAN ANDA GENAP :",GENAP
+DECLARE Ganjil : REAL
+DECLARE Genap : REAL
+INPUT Bilangan
+IF  Bilangan % 2 == 0 THEN
+    Genap <- Bilangan
+    OUTPUT "BILANGAN  GENAP :",Genap
 ELSE
-    GANJIL <- BILANGAN
-    OUTPUT "BILANGAN ANDA GANJIL :",GANJIL
+    Ganjil <- Bilangan
+    OUTPUT "BILANGAN  GANJIL :",Ganjil
 ENDIF
 ```
 
@@ -32,11 +32,11 @@ B@{shape : lean-r  , label: "X"}
 
 
 
-A((Start)) --> B[/X?/]-->
+A((Start)) --> B[/Bilangan/]-->
 
-C{X % 2 == 0} --TRUE--> D[/Even/]
+C{Bilangan % 2 == 0} --TRUE--> D[/'Bilangan Genap'/]
 
-C --FALSE--> E[/Odd/]
+C --FALSE--> E[/'Bilangan Ganjil'/]
 
 D & E --> F@{shape: dbl-circ, label: "End"}
 
