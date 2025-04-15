@@ -4,7 +4,7 @@
 
 2. Masukkan jari-jari lingkaran (disebut: r)
 
-3. Hitung Luas dengan rumus: Luas = 3.14 _ r _ r
+3. Hitung Luas dengan rumus: Luas = 3.14 *r * r
 4. Simpan Hasil Luas Lingkaran
 
 5. Hitung Keliling dengan rumus: Keliling = 2* 3.14 * r
