@@ -3,19 +3,19 @@
 1. Mulai
 
 2. Masukkan suhu dalam satuan Celsius (C)
-
-3. Hitung Fahrenheit (F) dengan rumus:
+3. Pilih Type :
+4. Jika Type "F" Hitung Fahrenheit (F) dengan rumus:
    → F = (C × 9/5) + 32
 
-4. Hitung Reamur (R) dengan rumus:
+5. Jika Type "R" Hitung Reamur (R) dengan rumus:
    → R = C × 4/5
 
-5. Hitung Kelvin (K) dengan rumus:
+6. Jika Type "K" Hitung Kelvin (K) dengan rumus:
    → K = C + 273.15
 
-6. Tampilkan hasil suhu dalam satuan Fahrenheit, Reamur, dan Kelvin
+7. Tampilkan hasil suhu dalam satuan Fahrenheit, Reamur, dan Kelvin
 
-7. Selesai
+8. Selesai
 
 # PSEUCODE
 
@@ -24,15 +24,21 @@ DECLARE CALCIUS :REAL
 DECLARE KELVIN REAL
 DECLARE FARENHEIT : REAL
 DECLARE REAMUR : REAL
+DECLARE TYPE : CHAR
+DECLARE RESULT : REAL
+INPUT CALCIUS
 
-INPUT
-KELVIN <- CALCIUS + 273
-FARENHEIT <- (9/5 X CALCIUS) + 32
-REAUMUR  <-  4/5 X CALCIUS
-OUTPUT " HASIL KONVERSI SUHU C KE K ADALAH ",KELVIN
-OUTPUT " HASIL KONVERSI SUHU C KE F ADALAH " , FARENHEIT
-OUTPUT "HASIL KONVERSI SUHU C KE R ADALAH " ,REAMUR
+IF TYPE == "K"
+   RESULT <- CALCIUS + 23
+ENDIF
+IF TYPE == "F"
+   RESULT <- (9/5 x CALCIUS) + 32
+ENDIF
+IF TYPE == "R"
+   RESULT <- 4/5 x CALCIUS
+ENDIF
 
+OUTPUT "HASIL KONVERSI ADALAH",RESULT
 ```
 
 # FLOWCHART
