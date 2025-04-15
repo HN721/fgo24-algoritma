@@ -20,25 +20,25 @@
 # PSEUCODE
 
 ```
-DECLARE CALCIUS :REAL
-DECLARE KELVIN REAL
-DECLARE FARENHEIT : REAL
-DECLARE REAMUR : REAL
-DECLARE TYPE : CHAR
-DECLARE RESULT : REAL
-INPUT CALCIUS
+DECLARE Calcius :REAL
+DECLARE Kelvin REAL
+DECLARE Farenheit : REAL
+DECLARE Reamur : REAL
+DECLARE Type : CHAR
+DECLARE Result : REAL
+INPUT Calcius
+INPUT Type
+IF Type == "K"
+   Result <- Calcius + 23
+ENDIF
+IF Type == "F"
+   Result <- (9/5 x Calcius) + 32
+ENDIF
+IF Type == "R"
+   Result <- 4/5 x Calcius
+ENDIF
 
-IF TYPE == "K"
-   RESULT <- CALCIUS + 23
-ENDIF
-IF TYPE == "F"
-   RESULT <- (9/5 x CALCIUS) + 32
-ENDIF
-IF TYPE == "R"
-   RESULT <- 4/5 x CALCIUS
-ENDIF
-
-OUTPUT "HASIL KONVERSI ADALAH",RESULT
+OUTPUT RESULT
 ```
 
 # FLOWCHART
@@ -46,7 +46,7 @@ OUTPUT "HASIL KONVERSI ADALAH",RESULT
 ```mermaid
 flowchart TD
   A@{ shape: circle, label: "Start" }
-  Isnumber@{ shape: lean-r , label: "C !== NUMBER" }
+  Isnumber@{ shape: diamond , label: "C !== NUMBER" }
   type@{ shape: lean-r , label: "input:type" }
 
   type1@{ shape: diamond , label: "Type: F" }
@@ -60,6 +60,7 @@ flowchart TD
   H@{shape: dbl-circ, label: "End"}
 A --> B
 B --> Isnumber
+Isnumber --False--> B
 Isnumber --> type
 type --> type1
 type1 --TRUE--> C
